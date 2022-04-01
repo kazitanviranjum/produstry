@@ -1,0 +1,150 @@
+/* 
+--------
+template: produstry
+author name: CIT
+author-email: yasinashraf205@.com
+Template Designer: Unknown
+version: 1.0.0
+
+
+-----------------
+table of content
+__-_-_-__-_
+
+*common css
+
+1. index page css
+------------------
+1.1)top header section
+
+
+
+
+---------------------
+*/
+
+/* common css start */
+ :root{
+    --primary-color: #ffcf3e;
+    --secondary-color: #353535;
+    --light-text: #ffffff;
+    --linear-fast: all linear .3s;
+    --linear-medium: all linear .4s;
+    --linear-slow: all linear .5s;
+
+} 
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,span,small{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+a , a:hover{
+    text-decoration: none;
+}
+/* common css end */
+
+/* top header section start */
+ #top_header{
+    background: var(--primary-color);
+    font-size: 14px;
+} 
+ #top_header .container,
+#top_header .row{
+    height: 100%;
+} 
+
+ #top_header .top_left_header p{
+    font-size: 14px;
+    color: var(--secondary-color);
+    display: inline-block;
+
+} 
+ #top_header .top_left_header p i{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#top_header .top_mid_header{
+    background: var(--secondary-color);
+    color: var(--light-text);
+    padding: 10px;
+    /* clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%); */
+    transform: skew(-30deg);
+}
+ #top_header .top_mid_header p{
+    text-align: center;
+    transform: skew(30deg);
+
+} 
+ #top_header .top_mid_header p span{
+    text-transform: uppercase;
+} 
+
+ #top_header .top_right_header ul li{
+    position: relative;
+    margin-right: 18px;
+}
+#top_header .top_right_header ul li::after,
+#top_header .top_right_header ul li::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: var(--secondary-color);
+    transform: scale(0);
+    top: 0;
+    transition: var(--linear-medium);
+}
+#top_header .top_right_header ul li::after{
+    left: auto;
+    right: 0;
+} 
+
+
+#top_header .top_right_header ul li a{
+    display: block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+#top_header .top_right_header ul li a::after,
+#top_header .top_right_header ul li a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--secondary-color);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: var(--linear-medium);
+}
+#top_header .top_right_header ul li a::after{
+    top: auto;
+    bottom: 0;
+}
+
+#top_header .top_right_header ul li:hover::after,
+#top_header .top_right_header ul li:hover::before,
+#top_header .top_right_header ul li:hover a::after,
+#top_header .top_right_header ul li:hover a::before
+{
+    transform: scale(1.2);  
+    
+} 
+.flex-wrap{
+	padding: 17px;
+}
+
+
+/* //top header section end */
