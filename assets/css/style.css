@@ -37,7 +37,7 @@ __-_-_-__-_
 body{
     font-family: 'Roboto', sans-serif;
 }
-h1,h2,h3,h4,h5,h6,ul,ol,span,small{
+h1,h2,h3,h4,h5,h6,p,ul,ol,span,small{
     margin: 0;
     padding: 0;
 }
